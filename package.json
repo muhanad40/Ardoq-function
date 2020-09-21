@@ -1,0 +1,13 @@
+{
+  "name": "ardoq-test",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "jasmine --reporter=jasmine-console-reporter"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "jasmine": "^3.6.1",
+    "jasmine-console-reporter": "^3.1.0"
+  }
+}
