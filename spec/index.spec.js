@@ -5,6 +5,14 @@ describe('productOfTopThree', () => {
 		expect(productOfTopThree([])).toEqual(0);
 	});
 
+	it('should return 0 if given NaN', () => {
+		expect(productOfTopThree([NaN])).toEqual(0);
+	});
+
+	it('should return 0 if given array of falsy items', () => {
+		expect(productOfTopThree([null, false, undefined])).toEqual(0);
+	});
+
 	it('should return the product of the highest three numbers when given only positive numbers', () => {
 		expect(productOfTopThree([1, 5, 3, 7, 3, 2])).toEqual(105);
 	});
