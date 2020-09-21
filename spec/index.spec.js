@@ -24,7 +24,7 @@ describe('productOfTopThree', () => {
 			expect(productOfTopThree([1, 5, 3, 7, 3, -5, 2])).toEqual(105);
 		});
 
-		it('should return the product of the highest three numbers when given at least two negative numbers and multiple positive numbers', () => {
+		it('should return the product of the highest three numbers when given two negative numbers and multiple positive numbers', () => {
 			expect(productOfTopThree([1, 5, 3, 7, 3, -5, -7, 2])).toEqual(245);
 		});
 
